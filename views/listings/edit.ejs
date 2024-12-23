@@ -1,0 +1,35 @@
+<% layout("layouts/boilerplate") -%>
+<body>
+    <h3>Edit Your Listing</h3>
+    <form method="post" action="/listings/<%=listing._id%>?_method=PATCH" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Edit Title</label>
+            <textarea name="title" class="form-control" required><%= listing.title %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Edit Description</label>
+            <textarea name="description" class="form-control" required><%= listing.description %></textarea>
+        </div>
+        <div class="mb-3">
+            <img src="<%= originalImageUrl %>">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-lable">Upload another Image</label>
+            <input name="image" type="file" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Edit Price</label>
+            <textarea name="price" class="form-control" required><%= listing.price %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Edit Location</label>
+            <textarea name="location" class="form-control" required><%= listing.location %></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Edit Country</label>
+            <textarea name="country" class="form-control" required><%= listing.country %></textarea>
+        </div>
+        <button id="btn" type="submit" class="btn btn-dark">Create</button>
+    </form>
+    <br> <br>
+</body>

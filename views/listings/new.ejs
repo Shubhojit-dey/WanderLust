@@ -1,0 +1,39 @@
+<% layout("layouts/boilerplate") -%>
+
+<body>
+    <h3>Fill It</h3>
+    <form method="post" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-lable">Enter Title</label>
+            <input name="title" placeholder="Add a catchy title" type="text" class="form-control" required>
+            <div class="valid-feedback">
+                Title Looks Good!
+            </div>
+            <div class="invalid-feedback">
+                Please type a valid title.
+              </div>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-lable">Enter Description</label>
+            <textarea name="description" placeholder="Add a description" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-lable">Upload Image</label>
+            <input name="image" type="file" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-lable">Enter Price(/night)</label>
+            <input name="price" placeholder="eg:- 2,100" type="number" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="location" class="form-lable">Enter Location</label>
+            <input name="location" placeholder="enter location" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="country" class="form-lable">Enter Country</label>
+            <input name="country" placeholder="eg:- INDIA" type="text" class="form-control" required>
+        </div>
+        <button id="btn" type="submit" class="btn btn-dark">Create</button>
+    </form>
+    <br> <br>
+</body>
