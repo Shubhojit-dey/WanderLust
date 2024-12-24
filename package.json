@@ -1,6 +1,6 @@
 {
   "engines": {
-  "node": "20.18.0"
+    "node": "20.18.0"
   },
   "name": "project_1",
   "version": "1.0.0",
@@ -23,6 +23,7 @@
     "express": "^4.21.1",
     "express-session": "^1.18.1",
     "joi": "^17.13.3",
+    "mapbox": "^1.0.0-beta10",
     "method-override": "^3.0.0",
     "mongoose": "^8.8.0",
     "multer": "^1.4.5-lts.1",
