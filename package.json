@@ -27,6 +27,7 @@
     "mongoose": "^8.8.0",
     "multer": "^1.4.5-lts.1",
     "multer-storage-cloudinary": "^4.0.0",
+    "node": "^18.18.0",
     "nodemo": "^1.0.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
