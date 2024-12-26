@@ -30,6 +30,7 @@
     "multer-storage-cloudinary": "^4.0.0",
     "node": "^20.18.1",
     "nodemo": "^1.0.0",
+    "nodemon": "^3.1.9",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^8.0.0"
